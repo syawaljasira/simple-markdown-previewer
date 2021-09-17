@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.scss';
+import './sass/App.scss';
 import placeholder from './data/input';
 import Main from './components/Main';
 
