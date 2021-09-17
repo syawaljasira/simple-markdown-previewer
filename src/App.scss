@@ -5,6 +5,21 @@ $colorBody: #d4ecdd;
 $colorPrime: #112031;
 $blue: #0a81ab;
 $darkBlue: #0c4271;
+$back: #112031;
+
+.feather {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.bg-back {
+  background-color: $back;
+}
 
 .bg-header {
   background-color: $colorHeader;
@@ -14,8 +29,12 @@ $darkBlue: #0c4271;
   background-color: $colorBody;
 }
 
-.textt-prime {
+.text-prime {
   color: $colorPrime;
+}
+
+.icon {
+  cursor: pointer;
 }
 
 .previewer {

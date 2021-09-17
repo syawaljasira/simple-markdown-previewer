@@ -5,14 +5,21 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 export default function Main(props) {
   return (
-    <div>
+    <div className="bg-back">
       <Container>
-        <Row className="my-5">
-          <Col xs={12}>
-            <Editor handleChange={props.handleChange} />
+        <Row className="py-5">
+          <Col xs={12} md={props.showExpand(props.expandWindow)}>
+            <Editor
+              toggleWindow={props.toggleWindow}
+              handleChange={props.handleChange}
+              markdown={props.markdown}
+            />
           </Col>
-          <Col xs={12}>
-            <Previewer markdown={props.markdown} />
+          <Col xs={12} md={props.showExpand(props.expandWindow)}>
+            <Previewer
+              toggleWindow={props.toggleWindow}
+              markdown={props.markdown}
+            />
           </Col>
         </Row>
       </Container>
